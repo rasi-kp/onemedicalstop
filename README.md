@@ -38,8 +38,10 @@ To install and run the project locally, follow these steps:
 
 ## Neo4j Visualization
 
-![Graph Visualization](path/to/graph-image.png)
-![Graph Visualization](path/to/another-graph-image.png)
+![Graph Visualization](https://github.com/rasi-kp/onemedicalstop/assets/107319917/96f3d02a-4126-4820-9742-68838e4e4c8c)
+
+![Graph Visualization](https://github.com/rasi-kp/onemedicalstop/assets/107319917/e90669a1-e082-4e0a-8699-0a321bcfc715)
+
 
 ## Key Takeaways
 
