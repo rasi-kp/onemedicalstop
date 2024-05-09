@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  nodejs-app:
+    build: .
+    ports:
+      - "3000:3000" # Map port 3000 inside the container to port 3000 on the host
+    volumes:
+      - ./datasets:/usr/src/app/datasets # Optional: Mount the datasets directory
+    env_file:
+      - .env # Specify the .env file
