@@ -18,7 +18,7 @@ This project includes the following components:
 - [Docker and Docker Compose](#docker-and-docker-compose)
 - [Data Sources](#data-sources)
 - [Neo4j Visualization](#neo4j-visualization)
-- [Documentation](https://drive.google.com/file/d/1elz-1Cx0a3hrgSrojOjDDbJLsf1u9HHi/view?usp=sharing)
+- [Documentation](https://drive.google.com/file/d/1-Zu_2avQfFRgISUX-6S_z2xXM-Eyj4Dr/view?usp=sharing)
 - [Key Takeaways](#key-takeaways)
 - [References](#references)
 
@@ -38,8 +38,7 @@ To install and run the project locally, follow these steps:
 
 ## Neo4j Visualization
 
-![Graph Visualization](path/to/graph-image.png)
-![Graph Visualization](path/to/another-graph-image.png)
+
 
 ## Key Takeaways
 

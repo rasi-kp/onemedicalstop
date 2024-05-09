@@ -6,8 +6,8 @@ const { success,allproduct, allorders, addproduct,importdata} = require('../cont
 /* GET home page. */
 router.get('/', success)
 router.get('/import',importdata)
-router.get('/addproduct',addproduct)
-router.get('/allproduct',allproduct)
-router.get('/allorders',allorders)
+router.get('/add_product',addproduct)
+router.get('/all_product',allproduct)
+router.get('/all_orders',allorders)
 
 module.exports = router;
