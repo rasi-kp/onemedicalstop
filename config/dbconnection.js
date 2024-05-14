@@ -8,7 +8,7 @@ async function createSession() {
     const driver = neo4j.driver(uri, neo4j.auth.basic(process.env.NEO4J_USER, process.env.NEO4J_PASS));
 
     // Create a session
-    const session = driver.session({ database: 'onestop' });
+    const session = driver.session({ database: 'study' });
 
     return { session, driver };
 }

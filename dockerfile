@@ -17,5 +17,9 @@ COPY . .
 # Expose the port the application runs on
 EXPOSE 3000
 
+# ENV NEO4J_URL=neo4j://localhost:7687
+# ENV NEO4J_USER=neo4j
+# ENV NEO4J_PASS=rafasafa
+
 # Define the command to run when the container starts
 CMD ["npm", "start"]

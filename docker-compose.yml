@@ -1,7 +1,8 @@
 version: '3.9'
 
 services:
-  nodejs-app:
+  onestop:
+    restart : always
     build: .
     ports:
       - "3000:3000" # Map port 3000 inside the container to port 3000 on the host
@@ -9,3 +10,20 @@ services:
       - ./datasets:/usr/src/app/datasets # Optional: Mount the datasets directory
     env_file:
       - .env # Specify the .env file
+    depends_on:
+      - neo4j-db # Ensure that the Neo4j database service is started before the Node.js app
+
+  neo4j-db:
+    image: neo4j:latest
+    ports:
+      - "7687:7687" # Neo4j Bolt port
+    volumes:
+      - ./C:/Users/Rasi/.Neo4jDesktop/relate-data/dbmss/dbms-4fbed8c1-48c6-4495-b6f0-39a3d59ca452/conf
+      - ./neo4j/data:/data # Mount a volume for Neo4j data persistence
+      - ./neo4j/logs:/logs # Mount a volume for Neo4j logs
+    environment:
+      NODE_ENV: production
+      NEO4J_AUTH: neo4j/rafasafa
+      NEO4J_URL: 'neo4j://localhost:7687'
+      NEO4J_USER: neo4j
+      NEO4J_PASS: rafasafa
